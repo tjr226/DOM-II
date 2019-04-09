@@ -43,8 +43,55 @@ tinyBusPic.addEventListener('dblclick', function () {
     tinyBusPic.style.display = "None";
 });
 
+// unique selector 5/10, scroll
+// adds red border to an img
 
+let mapPicture = document.querySelector('.container .content-section .text-content img');
+mapPicture.addEventListener('click', function() {
+    mapPicture.style.bordercolor = "red";
+    mapPicture.style.borderwidth = "1px";
+    mapPicture.style.borderstyle = "solid";
+});
 
+// unique selector 6/10, load
+// changes text color when the object loads
+
+let mapH1 = document.querySelector(' .content-section .text-content:nth-child(1) h1');
+mapH1.addEventListener('click', function() {
+    mapH1.style.color = "red";
+});
+
+// unique selector 7/10, focus
+
+let container = document.querySelector('.container');
+container.addEventListener('click', function() {
+    container.style.backgroundColor = "pink";
+});
+
+// unique selector 8/10, drag
+// apply to tinyBusPic
+
+tinyBusPic.addEventListener('click', function () {
+    // tinyBusPic.style.bordercolor = "red";
+    tinyBusPic.style.display = "None";
+});
+
+// unique selector 9/10
+// attempting resize
+
+let wholeThing = document.querySelector('.container');
+wholeThing.addEventListener('resize', function() {
+    wholeThing.backgroundColor = "gray";    
+});
+
+// unique selector 10/10
+// attempting contextmenu
+
+let mountainExcursionDiv = document.querySelector('.content-pick .destination:nth-child(2)');
+
+mountainExcursionDiv.addEventListener('click', function() {
+    mountainExcursionDiv.style.backgroundColor="gray";
+});
 
 
 // let featuresH4 = document.querySelector('.main-content .top-content:nth-child(1) h4');
