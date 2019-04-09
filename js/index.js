@@ -47,8 +47,7 @@ tinyBusPic.addEventListener('dblclick', function () {
 // adds red border to an img
 
 let mapPicture = document.querySelector('.container .content-section .img-content img');
-mapPicture.addEventListener('offline', function() {
-    // mapPicture.style.display = "None";
+mapPicture.addEventListener('auxclick', function() {
     mapPicture.style.borderColor = "red";
     mapPicture.style.borderWidth = "1px";
     mapPicture.style.borderStyle = "solid";
@@ -64,8 +63,8 @@ mapH1.addEventListener('click', function() {
 
 // unique selector 7/10, focus
 
-let container = document.querySelector('.container');
-container.addEventListener('click', function() {
+let container = document.querySelector('.footer');
+container.addEventListener('keydown', function() {
     container.style.backgroundColor = "pink";
 });
 
@@ -73,16 +72,22 @@ container.addEventListener('click', function() {
 // apply to tinyBusPic
 
 tinyBusPic.addEventListener('click', function () {
-    // tinyBusPic.style.bordercolor = "red";
-    tinyBusPic.style.display = "None";
+    tinyBusPic.style.borderColor = "red";
+    tinyBusPic.style.borderStyle = "solid";
+    tinyBusPic.style.borderWidth = "1px";
+    // tinyBusPic.style.display = "None";
 });
 
 // unique selector 9/10
 // attempting resize
 
-let wholeThing = document.querySelector('.container');
-wholeThing.addEventListener('resize', function() {
-    wholeThing.backgroundColor = "gray";    
+
+let venicePicture = document.querySelector('.container .inverse-content:nth-child(3) .img-content img');
+venicePicture.addEventListener('click', function() {
+    // mapPicture.style.display = "None";
+    venicePicture.style.borderColor = "red";
+    venicePicture.style.borderWidth = "1px";
+    venicePicture.style.borderStyle = "solid";
 });
 
 // unique selector 10/10
