@@ -46,17 +46,18 @@ tinyBusPic.addEventListener('dblclick', function () {
 // unique selector 5/10, scroll
 // adds red border to an img
 
-let mapPicture = document.querySelector('.container .content-section .text-content img');
-mapPicture.addEventListener('click', function() {
-    mapPicture.style.bordercolor = "red";
-    mapPicture.style.borderwidth = "1px";
-    mapPicture.style.borderstyle = "solid";
+let mapPicture = document.querySelector('.container .content-section .img-content img');
+mapPicture.addEventListener('offline', function() {
+    // mapPicture.style.display = "None";
+    mapPicture.style.borderColor = "red";
+    mapPicture.style.borderWidth = "1px";
+    mapPicture.style.borderStyle = "solid";
 });
 
 // unique selector 6/10, load
 // changes text color when the object loads
 
-let mapH1 = document.querySelector(' .content-section .text-content:nth-child(1) h1');
+let mapH1 = document.querySelector(' .content-section .text-content h2');
 mapH1.addEventListener('click', function() {
     mapH1.style.color = "red";
 });
@@ -89,7 +90,7 @@ wholeThing.addEventListener('resize', function() {
 
 let mountainExcursionDiv = document.querySelector('.content-pick .destination:nth-child(2)');
 
-mountainExcursionDiv.addEventListener('click', function() {
+mountainExcursionDiv.addEventListener('contextmenu', function() {
     mountainExcursionDiv.style.backgroundColor="gray";
 });
 
