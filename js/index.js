@@ -53,34 +53,31 @@ mapPicture.addEventListener('auxclick', function() {
     mapPicture.style.borderStyle = "solid";
 });
 
-// unique selector 6/10, load
-// changes text color when the object loads
+// unique selector 6/10, mousemove
 
 let mapH1 = document.querySelector(' .content-section .text-content h2');
-mapH1.addEventListener('click', function() {
+mapH1.addEventListener('mousemove', function() {
     mapH1.style.color = "red";
 });
 
-// unique selector 7/10, focus
+// unique selector 7/10, select
 
-let container = document.querySelector('.footer');
-container.addEventListener('keydown', function() {
-    container.style.backgroundColor = "pink";
+let footerElement = document.querySelector('.footer');
+footerElement.addEventListener('select', function() {
+    footerElement.style.backgroundColor = "pink";
 });
 
 // unique selector 8/10, drag
 // apply to tinyBusPic
 
-tinyBusPic.addEventListener('click', function () {
+tinyBusPic.addEventListener('dragend', function () {
     tinyBusPic.style.borderColor = "red";
     tinyBusPic.style.borderStyle = "solid";
     tinyBusPic.style.borderWidth = "1px";
-    // tinyBusPic.style.display = "None";
 });
 
 // unique selector 9/10
 // attempting resize
-
 
 let venicePicture = document.querySelector('.container .inverse-content:nth-child(3) .img-content img');
 venicePicture.addEventListener('click', function() {
