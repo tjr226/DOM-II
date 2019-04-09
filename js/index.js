@@ -19,6 +19,33 @@ funInTheSunDiv.addEventListener('click', function() {
     funInTheSunDiv.style.backgroundColor="gray";
 })
 
+// unique selector 2/10, mouseover
+// change background of island getaway to light green for jungle
+
+let islandGetawayDiv = document.querySelector('.content-pick .destination:nth-child(3)');
+
+islandGetawayDiv.addEventListener('mouseover', function() {
+    islandGetawayDiv.style.backgroundColor="lightgreen";
+});
+
+// unique selector 3/10, mouseleave
+// reverts background of island getaway
+
+islandGetawayDiv.addEventListener('mouseleave', function () {
+    islandGetawayDiv.style.backgroundColor="white";
+});
+
+// unique selector 4/10, dblclick
+// deletes picture of bus
+
+let tinyBusPic = document.querySelector('.container .intro img');
+tinyBusPic.addEventListener('dblclick', function () {
+    tinyBusPic.style.display = "None";
+});
+
+
+
+
 
 // let featuresH4 = document.querySelector('.main-content .top-content:nth-child(1) h4');
 // featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
