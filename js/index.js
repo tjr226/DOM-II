@@ -63,7 +63,7 @@ mapH1.addEventListener('mousemove', function() {
 // unique selector 7/10, select
 
 let footerElement = document.querySelector('.footer');
-footerElement.addEventListener('select', function() {
+footerElement.addEventListener('wheel', function() {
     footerElement.style.backgroundColor = "pink";
 });
 
