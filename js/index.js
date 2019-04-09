@@ -13,6 +13,8 @@ funInTheSunButton.addEventListener('click', function() {
 
 funInTheSunButton.addEventListener('click', (event) => { event.stopPropagation() });
 
+// another 'click' event to test propagation
+
 let funInTheSunDiv = document.querySelector('.content-pick .destination:nth-child(1)');
 
 funInTheSunDiv.addEventListener('click', function() {
@@ -43,7 +45,7 @@ tinyBusPic.addEventListener('dblclick', function () {
     tinyBusPic.style.display = "None";
 });
 
-// unique selector 5/10, scroll
+// unique selector 5/10, auxclick
 // adds red border to an img
 
 let mapPicture = document.querySelector('.container .content-section .img-content img');
@@ -60,14 +62,14 @@ mapH1.addEventListener('mousemove', function() {
     mapH1.style.color = "red";
 });
 
-// unique selector 7/10, select
+// unique selector 7/10, wheel
 
 let footerElement = document.querySelector('.footer');
 footerElement.addEventListener('wheel', function() {
     footerElement.style.backgroundColor = "pink";
 });
 
-// unique selector 8/10, drag
+// unique selector 8/10, dragend
 // apply to tinyBusPic
 
 tinyBusPic.addEventListener('dragend', function () {
@@ -76,19 +78,14 @@ tinyBusPic.addEventListener('dragend', function () {
     tinyBusPic.style.borderWidth = "1px";
 });
 
-// unique selector 9/10
-// attempting resize
+// unique selector 9/10, dragstart
 
 let venicePicture = document.querySelector('.container .inverse-content:nth-child(3) .img-content img');
-venicePicture.addEventListener('click', function() {
-    // mapPicture.style.display = "None";
-    venicePicture.style.borderColor = "red";
-    venicePicture.style.borderWidth = "1px";
-    venicePicture.style.borderStyle = "solid";
+venicePicture.addEventListener('dragstart', function() {
+    venicePicture.style.display = "None";
 });
 
-// unique selector 10/10
-// attempting contextmenu
+// unique selector 10/10, contextmenu
 
 let mountainExcursionDiv = document.querySelector('.content-pick .destination:nth-child(2)');
 
