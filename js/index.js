@@ -93,3 +93,9 @@ mountainExcursionDiv.addEventListener('contextmenu', function() {
     mountainExcursionDiv.style.backgroundColor="gray";
 });
 
+// preventDefault
+
+
+let navItems = Array.from(document.getElementsByTagName("a"));
+
+navItems.forEach(item => item.addEventListener('click', (event) => event.preventDefault()));
